@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{
+	char a[20] = "you_are_a_girl";
+	int *ptr = (int *)a;
+	printf("ptr = %d\n",ptr);
+	ptr += 5;
+	printf("ptr+5 = %d\n",ptr);//已超过a数组的范围
+	printf("sizeof(int) = %d\n",sizeof(int));
+	return 0;
+}
