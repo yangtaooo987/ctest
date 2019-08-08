@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+	
+	char str1[20] = "Hello";
+	char str2[] = "world";
+	char str3[12];
+	char str4[20];
+	char char2;
+	int len;
+	
+	strupr(str1);//upper
+	printf("%s\n",str1);
+	strlwr(str1);//lower
+	printf("%s\n",str1);
+	strncpy(str3,str1,2);//copy(destination,source)
+	printf("%s\n",str3);
+
+	len = strlen(str1);//length of str
+	printf("%d\n",len);
+
+	strcat(str1,str2);//concat str2 to str1
+	printf("%s\n",str1);
+
+	gets(str4);//input str
+	puts(str4);//ouput str
+
+	char2 = getchar();// input char
+	putchar(char2);//output char
+
+	puts(str1);
+	return 0;
+}
