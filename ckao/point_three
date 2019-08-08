@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{
+	int array[10];
+	int(*ptr)[10];
+	ptr = &array;
+	printf("ptr = %d\n",ptr);
+	printf("array = %d\n",array);
+	printf("sizeof(int (*)[10]) = %d\n",sizeof(int (*)[10]));//4
+	printf("sizeof(int[10]) = %d\n", sizeof(int[10]));//40
+	printf("sizeof(ptr) = %d\n",sizeof(ptr));//4
+	return 0;
+}
